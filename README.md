@@ -58,13 +58,10 @@ What we wnat to do in this project is judging the black box function whether bal
     欲使函數為平衡函數，因而挑選CNOT閘，並且讓q0為控制位元；q1為目標位元，但是當啟動CNOT閘前，q1會先經過X閘所以所以q1會先經過轉至，q1會從0轉至1；1轉至0，接著透過CNOT閘，進而做出輸出與輸入相反，且從量子電腦模擬以及量子電腦的執行結果，結果為 |1> 的機率都接近100%；|0> 的機率都接近0%，因此此黑箱函數為平衡函數。
 
     * Create quantum circuit.
-    <br>
-    ![prog4_1](img/prog4-1.png)
+        ![prog4_1](img/prog4-1.png)
 
     * prove through histogram.
-    <br>
-    ![prog4_2](img/prog4-2.png)
+        ![prog4_2](img/prog4-2.png)
 
     * Also prove in Quantum Computer.
-    <br>
-    ![prog4_3](img/prog4-3.png)
+        ![prog4_3](img/prog4-3.png)
