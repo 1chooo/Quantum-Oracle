@@ -1,25 +1,13 @@
-# Quantum-Oracle
+# Algorithmics (演算法) 2022 - Midterm Project
 
-This is the side project of the quantum algorithm, the source comes from the course -> CE3005 - Algorithmics.
+##### Tags: `Quantum-Computing`, `black-box`, `Algorithmics`, `uni-project`, `Deutsch`
 
-What we wnat to do in this project is judging the black box function whether balanced or constant; therefore, there are four possibilities.
+> Course: CE3005 - Algorithmics  
+> Dept: ATM  
+> Name: Hugo ChunHo Lin  
+> Student Number: 109601003
 
-## Usage
-```shell
-virtualenv venv --python=python3.9
-pip install --upgrade pip
-
-pip install qiskit
-pip install matplotlib
-pip install pylatexenc
-
-pip install mkdocs
-pip install mkdocs-material
-pip install pymdown-extensions
-pip install mkdocstrings
-pip install mkdocs-git-revision-date-plugin
-pip install mkdocs-jupyter
-```
+Programming Deutsch Algorithm and Running it on a Quantum Computer Simulator or a Real IBM Q Computer (請參考練習 5.5)
 
 ### pre-analyzing
 
