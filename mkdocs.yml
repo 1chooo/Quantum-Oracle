@@ -75,13 +75,13 @@ nav:
         - quantum_computing/Code-Ch6.ipynb
         - quantum_computing/Code-Ch7.ipynb
         - quantum_computing/Code-App1.ipynb
-    - Black Bos:
+    - Black Box:
         - black_box/constant_eq_0.ipynb
         - black_box/constant_eq_1.ipynb
         - black_box/balanced_in_eq_out.ipynb
         - black_box/balanced_in_neq_out.ipynb
         - black_box/index.md
-    - Contributing: contributing/contributing.md
+    - Contributing: contributing.md
 
     - Reference: reference.md
     - Report Issues: https://github.com/1chooo/Quantum-Oracle/issues
