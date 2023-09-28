@@ -1923,9 +1923,9 @@ plot_histogram(counts)</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>/tmp/ipykernel_1897/811856264.py:5: DeprecationWarning: The package qiskit.providers.ibmq is being deprecated. Please see https://ibm.biz/provider_migration_guide to get instructions on how to migrate to qiskit-ibm-provider (https://github.com/Qiskit/qiskit-ibm-provider) and qiskit-ibm-runtime (https://github.com/Qiskit/qiskit-ibm-runtime).
+<pre>/tmp/ipykernel_1971/811856264.py:5: DeprecationWarning: The package qiskit.providers.ibmq is being deprecated. Please see https://ibm.biz/provider_migration_guide to get instructions on how to migrate to qiskit-ibm-provider (https://github.com/Qiskit/qiskit-ibm-provider) and qiskit-ibm-runtime (https://github.com/Qiskit/qiskit-ibm-runtime).
   IBMQ.save_account(&#39;your_token&#39;)
-/tmp/ipykernel_1897/811856264.py:5: DeprecationWarning: The qiskit.IBMQ entrypoint and the qiskit-ibmq-provider package (accessible from &#39;qiskit.providers.ibmq`) are deprecated and will be removed in a future release. Instead you should use the qiskit-ibm-provider package which is accessible from &#39;qiskit_ibm_provider&#39;. You can install it with &#39;pip install qiskit_ibm_provider&#39;. Just replace &#39;qiskit.IBMQ&#39; with &#39;qiskit_ibm_provider.IBMProvider&#39;
+/tmp/ipykernel_1971/811856264.py:5: DeprecationWarning: The qiskit.IBMQ entrypoint and the qiskit-ibmq-provider package (accessible from &#39;qiskit.providers.ibmq`) are deprecated and will be removed in a future release. Instead you should use the qiskit-ibm-provider package which is accessible from &#39;qiskit_ibm_provider&#39;. You can install it with &#39;pip install qiskit_ibm_provider&#39;. Just replace &#39;qiskit.IBMQ&#39; with &#39;qiskit_ibm_provider.IBMProvider&#39;
   IBMQ.save_account(&#39;your_token&#39;)
 </pre>
 </div>
@@ -1939,14 +1939,14 @@ plot_histogram(counts)</div>
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">HTTPError</span>                                 Traceback (most recent call last)
-File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/api/session.py:278</span>, in <span class="ansi-cyan-fg">RetrySession.request</span><span class="ansi-blue-fg">(self, method, url, bare, **kwargs)</span>
+File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/api/session.py:278</span>, in <span class="ansi-cyan-fg">RetrySession.request</span><span class="ansi-blue-fg">(self, method, url, bare, **kwargs)</span>
 <span class="ansi-green-intense-fg ansi-bold">    277</span>     response <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">super</span>()<span style="color: rgb(98,98,98)">.</span>request(method, final_url, headers<span style="color: rgb(98,98,98)">=</span>headers, <span style="color: rgb(98,98,98)">*</span><span style="color: rgb(98,98,98)">*</span>kwargs)
 <span class="ansi-green-fg">--&gt; 278</span>     <span class="ansi-yellow-bg">response</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">raise_for_status</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    279</span> <span class="ansi-bold" style="color: rgb(0,135,0)">except</span> RequestException <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> ex:
 <span class="ansi-green-intense-fg ansi-bold">    280</span>     <span style="color: rgb(95,135,135)"># Wrap the requests exceptions into a IBM Q custom one, for</span>
 <span class="ansi-green-intense-fg ansi-bold">    281</span>     <span style="color: rgb(95,135,135)"># compatibility.</span>
 
-File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/python3.9/site-packages/requests/models.py:1021</span>, in <span class="ansi-cyan-fg">Response.raise_for_status</span><span class="ansi-blue-fg">(self)</span>
+File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/requests/models.py:1021</span>, in <span class="ansi-cyan-fg">Response.raise_for_status</span><span class="ansi-blue-fg">(self)</span>
 <span class="ansi-green-intense-fg ansi-bold">   1020</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> http_error_msg:
 <span class="ansi-green-fg">-&gt; 1021</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> HTTPError(http_error_msg, response<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">self</span>)
 
@@ -1962,7 +1962,7 @@ Cell <span class="ansi-green-fg">In[3], line 6</span>
 <span class="ansi-green-intense-fg ansi-bold">      7</span> IBMQ<span style="color: rgb(98,98,98)">.</span>providers()
 <span class="ansi-green-intense-fg ansi-bold">      8</span> provider <span style="color: rgb(98,98,98)">=</span> IBMQ<span style="color: rgb(98,98,98)">.</span>get_provider(hub<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">ibm-q</span><span style="color: rgb(175,0,0)">&#39;</span>, group<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">open</span><span style="color: rgb(175,0,0)">&#39;</span>, project<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">main</span><span style="color: rgb(175,0,0)">&#39;</span>)
 
-File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/ibmqfactory.py:191</span>, in <span class="ansi-cyan-fg">IBMQFactory.load_account</span><span class="ansi-blue-fg">(self)</span>
+File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/ibmqfactory.py:191</span>, in <span class="ansi-cyan-fg">IBMQFactory.load_account</span><span class="ansi-blue-fg">(self)</span>
 <span class="ansi-green-intense-fg ansi-bold">    187</span>     logger<span style="color: rgb(98,98,98)">.</span>warning(<span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">Credentials are already in use. The existing </span><span style="color: rgb(175,0,0)">&#39;</span>
 <span class="ansi-green-intense-fg ansi-bold">    188</span>                    <span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">account in the session will be replaced.</span><span style="color: rgb(175,0,0)">&#39;</span>)
 <span class="ansi-green-intense-fg ansi-bold">    189</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>disable_account()
@@ -1970,7 +1970,7 @@ File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/pyth
 <span class="ansi-green-intense-fg ansi-bold">    193</span> <span style="color: rgb(95,135,135)"># Prevent edge case where no hubs are available.</span>
 <span class="ansi-green-intense-fg ansi-bold">    194</span> providers <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>providers()
 
-File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/ibmqfactory.py:456</span>, in <span class="ansi-cyan-fg">IBMQFactory._initialize_providers</span><span class="ansi-blue-fg">(self, credentials, preferences)</span>
+File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/ibmqfactory.py:456</span>, in <span class="ansi-cyan-fg">IBMQFactory._initialize_providers</span><span class="ansi-blue-fg">(self, credentials, preferences)</span>
 <span class="ansi-green-intense-fg ansi-bold">    446</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">_initialize_providers</span>(
 <span class="ansi-green-intense-fg ansi-bold">    447</span>         <span style="color: rgb(0,135,0)">self</span>, credentials: Credentials,
 <span class="ansi-green-intense-fg ansi-bold">    448</span>         preferences: Optional[Dict] <span style="color: rgb(98,98,98)">=</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
@@ -1987,12 +1987,12 @@ File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/pyth
 <span class="ansi-green-intense-fg ansi-bold">    459</span>     service_urls <span style="color: rgb(98,98,98)">=</span> auth_client<span style="color: rgb(98,98,98)">.</span>current_service_urls()
 <span class="ansi-green-intense-fg ansi-bold">    460</span>     user_hubs <span style="color: rgb(98,98,98)">=</span> auth_client<span style="color: rgb(98,98,98)">.</span>user_hubs()
 
-File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/api/clients/auth.py:41</span>, in <span class="ansi-cyan-fg">AuthClient.__init__</span><span class="ansi-blue-fg">(self, api_token, auth_url, **request_kwargs)</span>
+File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/api/clients/auth.py:41</span>, in <span class="ansi-cyan-fg">AuthClient.__init__</span><span class="ansi-blue-fg">(self, api_token, auth_url, **request_kwargs)</span>
 <span class="ansi-green-intense-fg ansi-bold">     38</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_service_urls <span style="color: rgb(98,98,98)">=</span> {}  <span style="color: rgb(95,135,135)"># type: ignore[var-annotated]</span>
 <span class="ansi-green-intense-fg ansi-bold">     40</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>auth_api <span style="color: rgb(98,98,98)">=</span> Api(RetrySession(auth_url, <span style="color: rgb(98,98,98)">*</span><span style="color: rgb(98,98,98)">*</span>request_kwargs))
 <span class="ansi-green-fg">---&gt; 41</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>base_api <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_init_service_clients</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">request_kwargs</span><span class="ansi-yellow-bg">)</span>
 
-File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/api/clients/auth.py:53</span>, in <span class="ansi-cyan-fg">AuthClient._init_service_clients</span><span class="ansi-blue-fg">(self, **request_kwargs)</span>
+File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/api/clients/auth.py:53</span>, in <span class="ansi-cyan-fg">AuthClient._init_service_clients</span><span class="ansi-blue-fg">(self, **request_kwargs)</span>
 <span class="ansi-green-intense-fg ansi-bold">     44</span> <span style="color: rgb(175,0,0)">&#34;&#34;&#34;Initialize the clients used for communicating with the API.</span>
 <span class="ansi-green-intense-fg ansi-bold">     45</span> 
 <span class="ansi-green-intense-fg ansi-bold">     46</span> <span style="color: rgb(175,0,0)">Args:</span>
@@ -2004,7 +2004,7 @@ File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/pyth
 <span class="ansi-green-intense-fg ansi-bold">     54</span> <span style="color: rgb(95,135,135)"># Use the token for the next auth server requests.</span>
 <span class="ansi-green-intense-fg ansi-bold">     55</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>auth_api<span style="color: rgb(98,98,98)">.</span>session<span style="color: rgb(98,98,98)">.</span>access_token <span style="color: rgb(98,98,98)">=</span> access_token
 
-File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/api/clients/auth.py:75</span>, in <span class="ansi-cyan-fg">AuthClient._request_access_token</span><span class="ansi-blue-fg">(self)</span>
+File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/api/clients/auth.py:75</span>, in <span class="ansi-cyan-fg">AuthClient._request_access_token</span><span class="ansi-blue-fg">(self)</span>
 <span class="ansi-green-intense-fg ansi-bold">     65</span> <span style="color: rgb(175,0,0)">&#34;&#34;&#34;Request a new access token from the API authentication service.</span>
 <span class="ansi-green-intense-fg ansi-bold">     66</span> 
 <span class="ansi-green-intense-fg ansi-bold">     67</span> <span style="color: rgb(175,0,0)">Returns:</span>
@@ -2017,7 +2017,7 @@ File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/pyth
 <span class="ansi-green-intense-fg ansi-bold">     77</span> <span class="ansi-bold" style="color: rgb(0,135,0)">except</span> RequestsApiError <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> ex:
 <span class="ansi-green-intense-fg ansi-bold">     78</span>     <span style="color: rgb(95,135,135)"># Get the original exception that raised.</span>
 
-File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/api/rest/root.py:125</span>, in <span class="ansi-cyan-fg">Api.login</span><span class="ansi-blue-fg">(self, api_token)</span>
+File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/api/rest/root.py:125</span>, in <span class="ansi-cyan-fg">Api.login</span><span class="ansi-blue-fg">(self, api_token)</span>
 <span class="ansi-green-intense-fg ansi-bold">    116</span> <span style="color: rgb(175,0,0)">&#34;&#34;&#34;Login with token.</span>
 <span class="ansi-green-intense-fg ansi-bold">    117</span> 
 <span class="ansi-green-intense-fg ansi-bold">    118</span> <span style="color: rgb(175,0,0)">Args:</span>
@@ -2027,7 +2027,7 @@ File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/pyth
 <span class="ansi-green-intense-fg ansi-bold">    124</span> url <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>get_url(<span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">login</span><span style="color: rgb(175,0,0)">&#39;</span>)
 <span class="ansi-green-fg">--&gt; 125</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">session</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">post</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">url</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">json</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">{</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">&#39;</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">apiToken</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">&#39;</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">api_token</span><span class="ansi-yellow-bg">}</span><span class="ansi-yellow-bg">)</span><span style="color: rgb(98,98,98)">.</span>json()
 
-File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/python3.9/site-packages/requests/sessions.py:637</span>, in <span class="ansi-cyan-fg">Session.post</span><span class="ansi-blue-fg">(self, url, data, json, **kwargs)</span>
+File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/requests/sessions.py:637</span>, in <span class="ansi-cyan-fg">Session.post</span><span class="ansi-blue-fg">(self, url, data, json, **kwargs)</span>
 <span class="ansi-green-intense-fg ansi-bold">    626</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">post</span>(<span style="color: rgb(0,135,0)">self</span>, url, data<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">None</span>, json<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">None</span>, <span style="color: rgb(98,98,98)">*</span><span style="color: rgb(98,98,98)">*</span>kwargs):
 <span class="ansi-green-intense-fg ansi-bold">    627</span> <span style="color: rgb(188,188,188)">    </span><span style="color: rgb(175,0,0)">r</span><span style="color: rgb(175,0,0)">&#34;&#34;&#34;Sends a POST request. Returns :class:`Response` object.</span>
 <span class="ansi-green-intense-fg ansi-bold">    628</span> 
@@ -2037,7 +2037,7 @@ File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/pyth
 <span class="ansi-green-intense-fg ansi-bold">    635</span> <span style="color: rgb(175,0,0)">    &#34;&#34;&#34;</span>
 <span class="ansi-green-fg">--&gt; 637</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">request</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">&#34;</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">POST</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">&#34;</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">url</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">data</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">data</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">json</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">json</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
 
-File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/api/session.py:300</span>, in <span class="ansi-cyan-fg">RetrySession.request</span><span class="ansi-blue-fg">(self, method, url, bare, **kwargs)</span>
+File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.18/x64/lib/python3.9/site-packages/qiskit/providers/ibmq/api/session.py:300</span>, in <span class="ansi-cyan-fg">RetrySession.request</span><span class="ansi-blue-fg">(self, method, url, bare, **kwargs)</span>
 <span class="ansi-green-intense-fg ansi-bold">    297</span>         <span style="color: rgb(95,135,135)"># Modify the original message on the chained exceptions.</span>
 <span class="ansi-green-intense-fg ansi-bold">    298</span>         <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_modify_chained_exception_messages(ex)
 <span class="ansi-green-fg">--&gt; 300</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> RequestsApiError(message, status_code) <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">ex</span>
@@ -2062,7 +2062,7 @@ File <span class="ansi-green-fg">/opt/hostedtoolcache/Python/3.9.17/x64/lib/pyth
   <small>
     
       Last update:
-      2023-06-18
+      2023-09-28
     
   </small>
 </div>
