@@ -6,8 +6,12 @@ What we wnat to do in this project is judging the black box function whether bal
 
 ## Usage
 ```shell
-virtualenv venv --python=python3.9
 pip install --upgrade pip
+pip install virtualenv
+virtualenv venv --python=python3.9
+source venv/bin/activate
+
+pip install ipykernel
 
 pip install qiskit
 pip install matplotlib
@@ -19,6 +23,23 @@ pip install pymdown-extensions
 pip install mkdocstrings
 pip install mkdocs-git-revision-date-plugin
 pip install mkdocs-jupyter
+
+deactivate
+rm -rf venv     # remove the venv
+```
+
+### With `requirements.txt`
+```shell
+pip install --upgrade pip
+pip install virtualenv
+virtualenv venv --python=python3.9
+source venv/bin/activate
+
+pip install ipykernel
+pip install -r requirements.txt
+
+deactivate
+rm -rf venv     # remove the venv
 ```
 
 ### pre-analyzing
