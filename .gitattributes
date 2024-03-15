@@ -1,1 +1,1 @@
-*.md linguist-detectable=true
+*.ipynb linguist-vendored=Python
